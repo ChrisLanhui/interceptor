@@ -7,7 +7,7 @@ import com.lanhui.interceptor.annotation.Intercepts;
 import com.lanhui.interceptor.annotation.Signature;
 
 @Intercepts({@Signature(type = ISample.class, method = "doBusiness", args = {String.class})})
-public class SampleInteceptor implements Interceptor {
+public class SampleInterceptor implements Interceptor {
 
     public Object intercept(Invocation invocation) throws Throwable {
         System.out.println("intercept the method of ISample");
